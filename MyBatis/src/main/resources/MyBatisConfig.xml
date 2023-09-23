@@ -18,6 +18,7 @@
     <mappers>
 <!--        加载SQL映射文件-->
         <mapper resource="org/example/mapper/testMapper.xml"/>
-        <mapper resource="org/example/mapper/studentmapper.xml"/>
+        <mapper resource="org/example/mapper/studentMapper.xml"/>
+        <mapper resource="org/example/mapper/employeeMapper.xml"/>
     </mappers>
 </configuration>
