@@ -7,34 +7,39 @@
         select *
         from student
         <where>
-            <if test="name!=null and name!=''">
-                and name=#{name};
-            </if>
-            <if test="name==null and major!=null">
-                and major=#{major};
-            </if>
-            <if test="name==null and major==null">
-                and id is not null;
-            </if>
+            <choose>
+                <when test="name!=null and name!=''">
+                    and name=#{name};
+                </when>
+                <when test="name==null and major!=null">
+                    and major=#{major};
+                </when>
+                <when test="name==null and major==null">
+                    and id = #{id};
+                </when>
+                <otherwise>
+                    and 1=1;
+                </otherwise>
+            </choose>
         </where>
     </select>
-    <select id="selectM" parameterType="int" resultType="org.example.bean.student">
+    <select id="queryLessThanId" parameterType="org.example.bean.student" resultType="org.example.bean.student">
         select *
         from student
-        where id &lt; 5;
+        where id &lt; #{id};
     </select>
-    <select id="selectMore" parameterType="map" resultType="org.example.bean.student">
+    <select id="selectById" parameterType="java.util.List" resultType="org.example.bean.student">
         select * from student
              <where>
-                <foreach collection="hmap" index="keys" item="value" separator="or">
-                     id=#{value}
+                <foreach collection="list" item="value" separator="or">
+                     id=#{value.id}
                 </foreach>
              </where>
     </select>
-    <insert id="insertMore" parameterType="map">
+    <insert id="insertMultiple" parameterType="java.util.List">
         insert into student (name,major)values
-        <foreach collection="insertmap" index="keys" item="values" separator=",">
-        (#{values.name},#{values.major})
+        <foreach collection="list"  item="values" separator=",">
+            (#{values.name},#{values.major})
         </foreach>
     </insert>
 </mapper>

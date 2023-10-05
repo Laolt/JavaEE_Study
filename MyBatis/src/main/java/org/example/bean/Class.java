@@ -1,11 +1,15 @@
 package org.example.bean;
 
-public class student {
-    int id;
-    String name,major;
+import java.util.List;
 
-    public student() {
+public class Class {
+    int id;
+    String name;
+    //存储级联查询到的教师集合
+    List<teacher> teachersList;
+    public Class() {
     }
+
     public int getId() {
         return id;
     }
@@ -22,20 +26,20 @@ public class student {
         this.name = name;
     }
 
-    public String getMajor() {
-        return major;
+    public List<teacher> getTeachersList() {
+        return teachersList;
     }
 
-    public void setMajor(String major) {
-        this.major = major;
+    public void setTeachersList(List<teacher> teachersList) {
+        this.teachersList = teachersList;
     }
 
     @Override
     public String toString() {
-        return "student{" +
+        return "Class{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", major='" + major + '\'' +
+                ", teachersList=" + teachersList +
                 '}';
     }
 }

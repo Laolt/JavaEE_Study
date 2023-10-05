@@ -6,12 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Spring" />
         <module name="MyBatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="MyBatis" target="17" />
       <module name="MyBatisw" target="17" />
+      <module name="Spring" target="17" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Spring" options="" />
+    </option>
   </component>
 </project>

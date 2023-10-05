@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.teacherAndClassMapper">
+    <select id="selectClassByTeacher" parameterType="org.example.bean.teacher" resultMap="findClassByTeacherId">
+        select * from teacher where id=#{id}
+    </select>
+    <resultMap id="findClassByTeacherId" type="org.example.bean.teacher">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="classList" column="id" ofType="org.example.bean.Class" select="selectClassByTeacherId"/>
+    </resultMap>
+    <select id="selectClassByTeacherId" parameterType="org.example.bean.teacher" resultType="org.example.bean.Class">
+        select * from class where id in(
+            select class_id from teacher_class where teacher_id=#{id}
+        );
+    </select>
+    <select id="selectTeacherByClass" parameterType="org.example.bean.Class" resultMap="findTeacherByClassId">
+        select * from class where id=#{id}
+    </select>
+    <resultMap id="findTeacherByClassId" type="org.example.bean.Class">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="teachersList" column="id" ofType="org.example.bean.Class" select="selectTeacherByClassId"/>
+    </resultMap>
+    <select id="selectTeacherByClassId" parameterType="org.example.bean.Class" resultType="org.example.bean.teacher">
+        select * from teacher where id in(
+            select teacher_id from teacher_class where class_id=#{id}
+            );
+    </select>
+
+</mapper>
