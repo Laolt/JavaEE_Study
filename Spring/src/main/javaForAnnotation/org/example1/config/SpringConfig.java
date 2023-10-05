@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Scope;
 @ComponentScan("org.example1")
 @PropertySource("classpath:database.properties")//加载外部文件同样用${}进行引用,不支持*
 public class SpringConfig {
+    int anInt;
 }
 
 
