@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/MyBatis/pom.xml" />
         <option value="$PROJECT_DIR$/Spring/pom.xml" />
         <option value="$PROJECT_DIR$/javaEETest_SpringForXML/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SpringForAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation/pom.xml" />
       </list>
     </option>
   </component>

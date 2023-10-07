@@ -6,12 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring" />
         <module name="MyBatis" />
         <module name="javaEETest_SpringForXML" />
+        <module name="javaEETest_SpringForAnnotation" />
+        <module name="javaEETest_SpringAndMybatisForAnnotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="javaEETest_SpringAndMybatisForAnnotation" target="17" />
+      <module name="javaEETest_SpringForAnnotation" target="17" />
       <module name="javaEETest_SpringForXML" target="17" />
       <module name="MyBatis" target="1.5" />
       <module name="MyBatisw" target="17" />
