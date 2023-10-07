@@ -18,6 +18,5 @@ public class testApp {
         testDao.a();
         testServiceFA testService=(testServiceFA) tac.getBean("testService");
         testService.b();
-        你哈
     }
 }
