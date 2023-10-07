@@ -8,10 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring" />
         <module name="MyBatis" />
+        <module name="javaEETest_SpringForXML" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="MyBatis" target="17" />
+      <module name="javaEETest_SpringForXML" target="17" />
+      <module name="MyBatis" target="1.5" />
       <module name="MyBatisw" target="17" />
       <module name="Spring" target="17" />
     </bytecodeTargetLevel>

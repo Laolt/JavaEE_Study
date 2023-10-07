@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaEETest.iml" filepath="$PROJECT_DIR$/JavaEETest.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForXML.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForXML.iml" />
     </modules>
   </component>
 </project>
