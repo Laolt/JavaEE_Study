@@ -22,7 +22,7 @@
     <resultMap id="findTeacherByClassId" type="org.example.bean.Class">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
-        <collection property="teachersList" column="id" ofType="org.example.bean.Class" select="selectTeacherByClassId"/>
+        <collection property="teachersList" column="id" ofType="org.example.bean.teacher" select="selectTeacherByClassId"/>
     </resultMap>
     <select id="selectTeacherByClassId" parameterType="org.example.bean.Class" resultType="org.example.bean.teacher">
         select * from teacher where id in(
