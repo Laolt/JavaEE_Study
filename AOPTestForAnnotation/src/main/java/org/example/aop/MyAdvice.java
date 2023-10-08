@@ -3,10 +3,8 @@ package org.example.aop;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.Signature;
 import org.aspectj.lang.annotation.*;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
-import java.util.Objects;
 
 @Component//将该类作为一个bean交给spring处理
 @Aspect//将该类里面的方法识别为AOP的通知
@@ -31,15 +29,16 @@ public class MyAdvice {
     }
     @Around("pointer()")
     //无返回值示例（重点：需要依赖ProceedingJoinPoint对象才可以调用对应的函数）
-    public void around(ProceedingJoinPoint pjp) throws Throwable {
+    public Object around(ProceedingJoinPoint pjp) throws Throwable {
         //ProceedingJoinPoint对象中getSignature()方法获取一个含有此次方法执行的签名信息的类型
         Signature signature= pjp.getSignature();
         String className=signature.getDeclaringTypeName();//类型名
         String methodName=signature.getName();//方法名
         System.out.println("before");
         //表示对原始操作的调用
-        pjp.proceed();//调用函数返回值为null
-        System.out.println("after");
+        Object re=pjp.proceed();//调用函数返回值为null
+        System.out.println("after"+className+methodName);
+        return re;
     }
     @Around("pointer1()")
     //有返回值示例
