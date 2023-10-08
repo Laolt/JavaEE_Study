@@ -13,13 +13,12 @@
         <module name="AOPTestForAnnotation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="17">
       <module name="AOPTestForAnnotation" target="17" />
       <module name="javaEETest_SpringAndMybatisForAnnotation" target="17" />
       <module name="javaEETest_SpringForAnnotation" target="17" />
       <module name="javaEETest_SpringForXML" target="17" />
-      <module name="MyBatis" target="1.5" />
-      <module name="MyBatisw" target="17" />
+      <module name="MyBatis" target="17" />
       <module name="Spring" target="17" />
     </bytecodeTargetLevel>
   </component>
