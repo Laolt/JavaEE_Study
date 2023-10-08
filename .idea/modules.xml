@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/AOPTestForAnnotation/AOPTestForAnnotation.iml" filepath="$PROJECT_DIR$/AOPTestForAnnotation/AOPTestForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaEETest.iml" filepath="$PROJECT_DIR$/JavaEETest.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
