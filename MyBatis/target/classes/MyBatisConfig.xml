@@ -17,9 +17,6 @@
     </environments>
     <mappers>
 <!--        加载SQL映射文件-->
-        <mapper resource="org/example/mapper/testMapper.xml"/>
-        <mapper resource="org/example/mapper/studentMapper.xml"/>
-        <mapper resource="org/example/mapper/employeeMapper.xml"/>
-        <mapper resource="org/example/mapper/teacherAndClassMapper.xml"/>
+        <package name="org.example.mapper"/>
     </mappers>
 </configuration>
