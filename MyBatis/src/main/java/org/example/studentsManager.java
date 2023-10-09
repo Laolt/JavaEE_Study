@@ -1,13 +1,11 @@
 package org.example;
 
-import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.example.mapper.studentMapper;
 import org.example.bean.student;
+import org.example.utils.MyBatisUtil;
+
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,11 +14,8 @@ public class studentsManager {
     studentMapper mapper;
     student s;
     public studentsManager()throws IOException{
-        String resource = "MyBatisConfig.xml";
-        InputStream inputStream = Resources.getResourceAsStream(resource);
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         //获取SqlSession对象
-        this.session = sqlSessionFactory.openSession();
+        this.session = MyBatisUtil.getSqlSession();
         //test表中mapper代理的实例
         this.mapper=session.getMapper(studentMapper.class);
     }

@@ -1,10 +1,11 @@
 package org.example;
 
 import org.apache.ibatis.session.SqlSession;
-import org.example.mapper.teacherAndClassMapper;
-import org.example.utils.MyBatisUtil;
 import org.example.bean.Class;
 import org.example.bean.teacher;
+import org.example.mapper.teacherAndClassMapper;
+import org.example.utils.MyBatisUtil;
+
 import java.io.IOException;
 import java.util.List;
 

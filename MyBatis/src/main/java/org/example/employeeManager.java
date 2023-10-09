@@ -1,13 +1,11 @@
 package org.example;
 
-import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.example.bean.employee;
 import org.example.mapper.employeeMapper;
+import org.example.utils.MyBatisUtil;
+
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 public class employeeManager {
@@ -15,10 +13,8 @@ public class employeeManager {
     employeeMapper mapper;
     employee e;
     public employeeManager() throws IOException{
-        InputStream input= Resources.getResourceAsStream("MyBatisConfig.xml");
-        SqlSessionFactory sqlSessionFactory=new SqlSessionFactoryBuilder().build(input);
         //构造函数配置sqlSession以及mappee代理
-        this.session=sqlSessionFactory.openSession();
+        this.session= MyBatisUtil.getSqlSession();
         this.mapper=session.getMapper(employeeMapper.class);
     }
     public void selectById(int id){

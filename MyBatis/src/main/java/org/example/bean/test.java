@@ -11,9 +11,27 @@ import java.io.InputStream;
 import java.util.List;
 
 public class test {
-    private int id;
+    private int id,age;
     private String name;
-    private int age;
+    private testjob job;
+
+    public testjob getJob() {
+        return job;
+    }
+
+    public void setJob(testjob job) {
+        this.job = job;
+    }
+
+    @Override
+    public String toString() {
+        return "test{" +
+                "id=" + id +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                ", job=" + job +
+                '}';
+    }
 
     public test(int id, String name, int age) {
         this.id = id;
@@ -22,14 +40,6 @@ public class test {
     }
     public test(){
 
-    }
-    @Override
-    public String toString() {
-        return "test{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                '}';
     }
 
     public int getId() {
