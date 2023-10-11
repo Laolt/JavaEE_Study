@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/AOPTestForAnnotation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/AOPTestForAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringForAnnotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringForAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringForXML/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringForXML/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation/src/main/resources" charset="UTF-8" />
   </component>
 </project>

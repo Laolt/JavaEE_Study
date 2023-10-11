@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AOPTestForAnnotation/AOPTestForAnnotation.iml" filepath="$PROJECT_DIR$/AOPTestForAnnotation/AOPTestForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaEETest.iml" filepath="$PROJECT_DIR$/JavaEETest.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AOPTestForAnnotation/javaEETest_AOPTestForAnnotation.iml" filepath="$PROJECT_DIR$/AOPTestForAnnotation/javaEETest_AOPTestForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForXML.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForXML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation.iml" />
     </modules>
   </component>
 </project>

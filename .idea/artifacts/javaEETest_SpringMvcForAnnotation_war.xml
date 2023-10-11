@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="javaEETest_SpringMvcForAnnotation:war">
+    <output-path>$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>javaEETest_SpringMvcForAnnotation</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="javaEETest_SpringMvcForAnnotation-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="javaEETest_SpringMvcForAnnotation:war exploded" />
+    </root>
+  </artifact>
+</component>
