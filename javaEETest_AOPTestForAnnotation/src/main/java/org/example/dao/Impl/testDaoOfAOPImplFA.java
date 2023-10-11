@@ -1,4 +1,4 @@
-package org.example.dao.Impl;
+package org.example.dao.impl;
 
 import org.example.dao.testDaoOfAOPFA;
 import org.springframework.stereotype.Repository;

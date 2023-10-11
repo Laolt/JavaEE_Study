@@ -12,7 +12,7 @@ public class MyBatisUtil {
     public static SqlSession getSqlSession() throws IOException {
         InputStream input= Resources.getResourceAsStream("MyBatisConfig.xml");
         SqlSessionFactory sqlSessionFactory=new SqlSessionFactoryBuilder().build(input);
-        //构造函数配置sqlSession以及mappee代理
+        //构造函数配置sqlSession
         return sqlSessionFactory.openSession();
     }
 }
