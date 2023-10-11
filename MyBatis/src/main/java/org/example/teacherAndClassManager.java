@@ -21,12 +21,14 @@ public class teacherAndClassManager {
     void selectTeacherByClass(int id){//执行接口函数并展示对应结果
         _class=new Class();
         _class.setId(id);
-        showMessageOfClass(mapper.selectTeacherByClass(_class));
+//        showMessageOfClass(mapper.selectTeacherByClass(_class));
+        showMessageOfClass(mapper.selectTeacherByClassForAnnotation(_class));
     }
     void selectClassByTeacher(int id) {//执行接口函数并展示对应结果
         teacher = new teacher();
         teacher.setId(id);
-        showMessageOfTeacher(mapper.selectClassByTeacher(teacher));
+//        showMessageOfTeacher(mapper.selectClassByTeacher(teacher));
+        showMessageOfTeacher(mapper.selectClassByTeacherForAnnotation(teacher));
     }
     public void showMessageOfTeacher(List<teacher> teachers){//展示对应老师的所有课程信息
         System.out.println("id为"+teachers.get(0).getId()+"的老师是"+teachers.get(0).getName()+"老师，该老师教的课程有：");

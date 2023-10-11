@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -11,6 +14,8 @@
         <option value="$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation/pom.xml" />
         <option value="$PROJECT_DIR$/AOPTest/pom.xml" />
         <option value="$PROJECT_DIR$/AOPTestForAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/pom.xml" />
       </list>
     </option>
   </component>
