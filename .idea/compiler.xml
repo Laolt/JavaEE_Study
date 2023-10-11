@@ -14,17 +14,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
-      <module name="AOPTestForAnnotation" target="17" />
+      <module name="javaEETest_AOPTestForAnnotation" target="17" />
       <module name="javaEETest_SpringAndMybatisForAnnotation" target="17" />
       <module name="javaEETest_SpringForAnnotation" target="17" />
       <module name="javaEETest_SpringForXML" target="17" />
       <module name="MyBatis" target="17" />
-      <module name="Spring" target="17" />
     </bytecodeTargetLevel>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Spring" options="" />
-    </option>
   </component>
 </project>
