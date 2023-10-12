@@ -9,7 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForXML.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForXML.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponce/javaEETest_SpringMvcRequestAndResponce.iml" filepath="$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponce/javaEETest_SpringMvcRequestAndResponce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponce.iml" filepath="$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponce.iml" />
     </modules>
   </component>
 </project>

@@ -23,6 +23,8 @@
       <module name="javaEETest_SpringForXML" target="17" />
       <module name="javaEETest_SpringMvcForAnnotation" target="17" />
       <module name="javaEETest_SpringMvcRequestAndResponce" target="1.8" />
+      <module name="javaEETest_SpringMvcRequestAndResponse" target="1.8" />
+      <module name="javaEETest_SpringMvcRequestAndResponse11" target="1.8" />
       <module name="MyBatis" target="1.5" />
     </bytecodeTargetLevel>
   </component>
