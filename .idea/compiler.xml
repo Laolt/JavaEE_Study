@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="javaEETest_SpringForXML" />
         <module name="javaEETest_AOPTestForAnnotation" />
+        <module name="javaEETest_SpringMvcRequestAndResponce" />
         <module name="javaEETest_SpringForAnnotation" />
         <module name="javaEETest_SpringAndMybatisForAnnotation" />
         <module name="MyBatis" />
@@ -21,6 +22,7 @@
       <module name="javaEETest_SpringForAnnotation" target="17" />
       <module name="javaEETest_SpringForXML" target="17" />
       <module name="javaEETest_SpringMvcForAnnotation" target="17" />
+      <module name="javaEETest_SpringMvcRequestAndResponce" target="1.8" />
       <module name="MyBatis" target="1.5" />
     </bytecodeTargetLevel>
   </component>
