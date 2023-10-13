@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponce" />
     <file type="web" url="file://$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponce1" />
     <file type="web" url="file://$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponse11" />
+    <file type="web" url="file://$PROJECT_DIR$/javaEETest_SSMTestOfTrain" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -20,6 +21,8 @@
         <option value="$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation/pom.xml" />
         <option value="$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/pom.xml" />
         <option value="$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponce/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SSM/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SSMTestOfTrain/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

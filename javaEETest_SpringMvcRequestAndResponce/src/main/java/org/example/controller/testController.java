@@ -6,12 +6,12 @@ import java.util.List;
 import org.example.domain.test;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
+@ResponseBody
+//当此类中的所有方法都含有@ResponseBody注解时，可以将该注解全部写到类上面
+//且@Controller+@ResponseBody=@RestController,上述两注解可以被@RestController注解替换
 @RequestMapping(value = {"/test"},produces = "Application/json;charset=utf-8")
 public class testController {
     public testController() {
@@ -128,4 +128,57 @@ public class testController {
 		//{{},{},{}}
         return new ArrayList();
     }
+//    ---------------------------以下是关于REST风格的示例：--------------------------------------------
+//    用@RequestMapping中method的属性值来指定通过什么样的方式请求才能调用该方法，
+//    也可以用对应的mapping代替原来的ResquestMapping
+//支持八种提交方式，主要是：POST、GET、DEL和PUT
+    //访问路径都是：https://localhost:8080/test/test
+    //1、删除请求（DEL）
+    // 也可以用 @DeleteMapping代替原来的 @RequestMapping
+    @RequestMapping(value = "/tests",method = RequestMethod.DELETE)
+    @ResponseBody
+    public String delREST() {
+        return "666";
+    }
+    //2、添加请求(POST)
+    // 也可以用@PostMapping代替原来的 @RequestMapping
+    @RequestMapping(value = "/tests",method = RequestMethod.POST)
+    @ResponseBody
+    public String addREST() {
+        return "666";
+    }
+    //3、更新请求(PUT)
+    // 也可以用@PutMapping代替原来的 @RequestMapping
+    @RequestMapping(value = "/tests",method = RequestMethod.PUT)
+    @ResponseBody
+    public String updateREST() {
+        return "666";
+    }
+    //4、查询请求(GET)
+    // 也可以用@GetMapping代替原来的 @RequestMapping
+    @RequestMapping(value = "/tests",method = RequestMethod.GET)
+    @ResponseBody
+    public String selectREST() {
+        return "666";
+    }
+
+//    传参示例
+//    以查询为例
+//    1、普通类型参数
+//    在形参上用@PathVariable注解标明，并且在请求路径后加占位标识，表示名与形参名相对应
+    @RequestMapping(value = "/tests/{id}",method = RequestMethod.GET)
+    @ResponseBody
+    public String selectRESTWithVar(@PathVariable Integer id) {
+        return "666";
+    }
+    //    2、引用类型参数
+//    与传统风格规则一致，用@RequestBody注解
+    @RequestMapping(value = "/tests1/",method = RequestMethod.POST)
+    @ResponseBody
+    public String selectRESTWithVar1(@RequestBody test test) {
+        return "666";
+    }
+
+
+
 }

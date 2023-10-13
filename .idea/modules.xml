@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaEETest.iml" filepath="$PROJECT_DIR$/JavaEETest.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/javaEETest_AOPTestForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/javaEETest_AOPTestForAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_SSMTestOfTrain.iml" filepath="$PROJECT_DIR$/javaEETest_SSMTestOfTrain.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForXML.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForXML.iml" />

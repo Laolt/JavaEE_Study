@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="javaEETest_SSMTestOfTrain:war">
+    <output-path>$PROJECT_DIR$/javaEETest_SSMTestOfTrain/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>javaEETest_SSMTestOfTrain</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="javaEETest_SSM.war">
+      <element id="artifact" artifact-name="javaEETest_SSMTestOfTrain:war exploded" />
+    </root>
+  </artifact>
+</component>
