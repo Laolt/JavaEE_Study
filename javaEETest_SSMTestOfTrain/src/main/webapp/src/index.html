@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" onclick="ccc()">点击</a>
+</body>
+    <script type="text/javascript">
+        function ccc(){
+            var xhr=new XMLHttpRequest();
+            xhr.open("GET","http://localhost:8080/trains/1",true)
+            xhr.send()
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4 && xhr.status===200){
+                    console.log(xhr.responseText)
+                }
+            }
+
+        }
+    </script>
+</html>
