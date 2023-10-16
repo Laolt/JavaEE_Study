@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="javaEETest_SSM.war">
+    <root id="archive" name="javaEETest_SSMTestOfTrain.war">
       <element id="artifact" artifact-name="javaEETest_SSMTestOfTrain:war exploded" />
     </root>
   </artifact>

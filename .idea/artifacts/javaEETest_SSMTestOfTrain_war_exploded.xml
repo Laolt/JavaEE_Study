@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="javaEETest_SSMTestOfTrain:war exploded">
-    <output-path>$PROJECT_DIR$/javaEETest_SSMTestOfTrain/target/javaEETest_SSM</output-path>
+    <output-path>$PROJECT_DIR$/javaEETest_SSMTestOfTrain/target/javaEETest_SSMTestOfTrain</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -22,7 +22,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.10.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.10.RELEASE" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.13" />
-          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:3.0.2" />
+          <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:3.0.0" />
           <element id="library" level="project" name="Maven: com.mysql:mysql-connector-j:8.0.33" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.21.9" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.10.RELEASE" />
@@ -30,14 +30,13 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.2.10.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.2.10.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.10.RELEASE" />
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/javaEETest_SSMTestOfTrain/target/javaEETest_SSM/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/javaEETest_SSMTestOfTrain/target/javaEETest_SSMTestOfTrain/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="javaEETest_SSMTestOfTrain/web/Web" />
     </root>

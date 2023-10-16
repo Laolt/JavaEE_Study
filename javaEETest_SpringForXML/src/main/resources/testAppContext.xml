@@ -8,7 +8,7 @@
        xmlns:context="http://www.springframework.org/schema/context"
 >
     <!--构造方法实例化bean-->
-    <!--        1、导入对应的Spring的坐标-->
+    <!--    1、导入对应的Spring的坐标-->
     <!--    2、配置bean name为别名 scope默认单例bean,prototype为非单例-->
     <bean class="org.example.dao.impl.testDaoImpl" id="testDao" scope="singleton"/>
     <bean class="org.example.service.impl.testServiceImpl" id="testService" name="service" init-method="init" destroy-method="destroy1">
@@ -26,7 +26,7 @@
     <!--    factory-method指定对应方法-->
     <bean id="staticTestDaoFactory" class="org.example.factory.staticTestDaoFactory" factory-method="getTestDao"/>
     <!--实例化工厂初始化bean-->
-    <!--    实力化工厂-->
+    <!--    实例化工厂-->
     <bean id="daoFactory" class="org.example.factory.testDaoFactory"/>
     <!--    factory-bean指定工厂bean并调用其方法实例化bean-->
     <bean id="testDao1"  factory-method="getTestDao" factory-bean="daoFactory"/>

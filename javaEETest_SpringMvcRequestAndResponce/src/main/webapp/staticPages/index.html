@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<h1>
-  你好
-</h1>
+    <a href="#" id="a">点击</a>
 </body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        var app=new Vue({
+            el:"#a",
+            methods:{
+                c:function(){
+                    alert("您好！！！");
+                }
+            }
+        });
+    </script>
 </html>

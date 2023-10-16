@@ -7,13 +7,13 @@ import org.springframework.context.annotation.Bean;
 import javax.sql.DataSource;
 
 public class JdbcConfig {
-    @Value("${driver}")
+    @Value("${jdbc.driver}")
     private String className;
-    @Value("${url}")
+    @Value("${jdbc.url}")
     private String url;
-    @Value("${username}")
+    @Value("${jdbc.username}")
     private String userName;
-    @Value("${password}")
+    @Value("${jdbc.password}")
     private String passWord;
     @Bean
     public DataSource dataSource(){
