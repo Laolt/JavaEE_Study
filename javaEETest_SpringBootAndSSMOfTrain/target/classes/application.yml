@@ -1,0 +1,10 @@
+#TODO 配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/java
+    username: root
+    password: 424841464
+    type: com.alibaba.druid.pool.DruidDataSource
+#    这里使用的是默认的数据源，使用druid的数据源需要在pom文件中配置,并用type属性标注数据源的名称
+
