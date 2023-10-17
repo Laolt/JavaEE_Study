@@ -18,6 +18,7 @@
         <property name="sqlSessionFactoryBeanName" value="factory"/>
         <property name="basePackage" value="org.example.dao"/>
     </bean>
+<!--    因为service层中调用dao层的对象，所以dao是service的依赖，所以将dao层依赖注入到service当中-->
     <bean id="testService" class="org.example.service.testService">
         <property name="td" ref="testDao"/>
     </bean>
