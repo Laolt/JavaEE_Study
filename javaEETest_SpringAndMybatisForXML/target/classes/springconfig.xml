@@ -15,10 +15,9 @@
     </bean>
 <!--    mapper接口所在的包的配置-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="sqlSessionFactoryBeanName" value="factory"/>
         <property name="basePackage" value="org.example.dao"/>
     </bean>
-<!--    因为service层中有dao层的对象作为自己的属性调用当中的方法，所以dao是service的依赖，所以将dao层依赖注入到service当中-->
+<!--    因为service层中调用dao层的对象，所以dao是service的依赖，所以将dao层依赖注入到service当中-->
     <bean id="testService" class="org.example.service.testService">
         <property name="td" ref="testDao"/>
     </bean>
