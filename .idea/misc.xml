@@ -23,6 +23,11 @@
         <option value="$PROJECT_DIR$/javaEETest_SpringMvcRequestAndResponce/pom.xml" />
         <option value="$PROJECT_DIR$/javaEETest_SSM/pom.xml" />
         <option value="$PROJECT_DIR$/javaEETest_SSMTestOfTrain/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_MavenTest/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SpringBootTest/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SpringBootAndMyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SpringBootAndSSM/pom.xml" />
+        <option value="$PROJECT_DIR$/javaEETest_SpringBootAndSSMOfTrain/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

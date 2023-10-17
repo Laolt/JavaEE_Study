@@ -5,8 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/JavaEETest.iml" filepath="$PROJECT_DIR$/JavaEETest.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/javaEETest_AOPTestForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/javaEETest_AOPTestForAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_MavenTest.iml" filepath="$PROJECT_DIR$/javaEETest_MavenTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_MavenTestChild.iml" filepath="$PROJECT_DIR$/javaEETest_MavenTestChild.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SSMTestOfTrain.iml" filepath="$PROJECT_DIR$/javaEETest_SSMTestOfTrain.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringBootAndMyBatis/javaEETest_SpringBootAndMyBatis.iml" filepath="$PROJECT_DIR$/javaEETest_SpringBootAndMyBatis/javaEETest_SpringBootAndMyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringBootAndSSMOfTrain/javaEETest_SpringBootAndSSMOfTrain.iml" filepath="$PROJECT_DIR$/javaEETest_SpringBootAndSSMOfTrain/javaEETest_SpringBootAndSSMOfTrain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringBootTest/javaEETest_SpringBootTest.iml" filepath="$PROJECT_DIR$/javaEETest_SpringBootTest/javaEETest_SpringBootTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringForXML.iml" filepath="$PROJECT_DIR$/javaEETest_SpringForXML.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_SpringMvcForAnnotation.iml" />

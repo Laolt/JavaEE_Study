@@ -6,20 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="javaEETest_SpringForXML" />
         <module name="javaEETest_AOPTestForAnnotation" />
         <module name="javaEETest_SpringMvcRequestAndResponce" />
-        <module name="javaEETest_SpringForAnnotation" />
         <module name="javaEETest_SpringAndMybatisForAnnotation" />
+        <module name="javaEETest_SpringBootAndSSMOfTrain" />
+        <module name="AOPTestForAnnotation" />
+        <module name="javaEETest_SpringBootAndMyBatis" />
+        <module name="javaEETest_SpringMvcForAnnotation" />
+        <module name="javaEETest_SpringBootTest" />
+        <module name="javaEETest_SpringForXML" />
+        <module name="javaEETest_SpringForAnnotation" />
         <module name="javaEETest_SSMTestOfTrain" />
         <module name="MyBatis" />
-        <module name="AOPTestForAnnotation" />
-        <module name="javaEETest_SpringMvcForAnnotation" />
+        <module name="javaEETest_MavenTestChild" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
       <module name="javaEETest_AOPTestForAnnotation" target="17" />
+      <module name="javaEETest_MavenTest" target="1.8" />
+      <module name="javaEETest_MavenTestChild" target="1.8" />
       <module name="javaEETest_SpringAndMybatisForAnnotation" target="17" />
+      <module name="javaEETest_SpringBootAndMyBatis" target="17" />
+      <module name="javaEETest_SpringBootAndSSMOfTrain" target="17" />
+      <module name="javaEETest_SpringBootTest" target="17" />
       <module name="javaEETest_SpringForAnnotation" target="17" />
       <module name="javaEETest_SpringForXML" target="17" />
       <module name="javaEETest_SpringMvcForAnnotation" target="17" />
@@ -29,5 +38,12 @@
       <module name="javaEETest_SSMTestOfTrain" target="1.8" />
       <module name="MyBatis" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="javaEETest_SpringBootAndMyBatis" options="-parameters" />
+      <module name="javaEETest_SpringBootAndSSMOfTrain" options="-parameters" />
+      <module name="javaEETest_SpringBootTest" options="-parameters" />
+    </option>
   </component>
 </project>

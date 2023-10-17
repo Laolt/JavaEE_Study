@@ -17,6 +17,12 @@ public class TrainCon {
     trainService t;
     @GetMapping("/{page}")
     public Result selectAll(@PathVariable int page){
+        System.out.println("666");
         return new Result(20041,t.selectAll(page));
+    }
+    @GetMapping
+    public Result selectAll(){
+        System.out.println("666");
+        return new Result(20041,t.selectAll(0));
     }
 }

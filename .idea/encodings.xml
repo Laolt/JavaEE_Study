@@ -3,10 +3,19 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_MavenTest/javaEETest_MavenTestChild/..." charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_MavenTest/javaEETest_MavenTestChild/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_MavenTest/javaEETest_MavenTestChild/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_MavenTest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_MavenTest/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SSMTestOfTrain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SSMTestOfTrain/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringAndMybatisForAnnotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_SpringBootAndMyBatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_SpringBootAndSSMOfTrain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_SpringBootAndSSMOfTrain/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/javaEETest_SpringBootTest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringForAnnotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringForAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/javaEETest_SpringForXML/src/main/java" charset="UTF-8" />
