@@ -3,6 +3,7 @@ package org.example.domain;
 public class test {
     int id;
     String name;
+    String age;
 
     @Override
     public String toString() {
@@ -37,5 +38,5 @@ public class test {
         this.age = age;
     }
 
-    String age;
+
 }

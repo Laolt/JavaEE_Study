@@ -14,12 +14,13 @@
         <module name="AOPTestForAnnotation" />
         <module name="javaEETest_SpringBootAndMyBatis" />
         <module name="javaEETest_SpringMvcForAnnotation" />
+        <module name="MybatisForXML" />
         <module name="javaEETest_SpringBootTest" />
         <module name="javaEETest_SpringForXML" />
         <module name="javaEETest_SpringForAnnotation" />
         <module name="javaEETest_SSMTestOfTrain" />
-        <module name="MyBatis" />
         <module name="javaEETest_MavenTestChild" />
+        <module name="MyBatisForAnnotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -35,10 +36,9 @@
       <module name="javaEETest_SpringForXML" target="17" />
       <module name="javaEETest_SpringMvcForAnnotation" target="17" />
       <module name="javaEETest_SpringMvcRequestAndResponce" target="1.8" />
-      <module name="javaEETest_SpringMvcRequestAndResponse" target="1.8" />
-      <module name="javaEETest_SpringMvcRequestAndResponse11" target="1.8" />
       <module name="javaEETest_SSMTestOfTrain" target="1.8" />
-      <module name="MyBatis" target="1.5" />
+      <module name="MyBatisForAnnotation" target="8" />
+      <module name="MybatisForXML" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<!--    数据源Bean的配置-->
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+       xmlns:context="http://www.springframework.org/schema/context"
+>
+    <!--    数据源Bean的配置-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
-        <property name="url" value="jdbc:mysql:///java?useSSL=false"/>
-        <property name="username" value="root"/>
-        <property name="password" value="424841464"/>
+        <property name="driverClassName" value="${className}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${user}"/>
+        <property name="password" value="${password}"/>
     </bean>
 <!--    SqlSessionFactoryBean-->
     <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
-        <property name="configLocation" value="MybatisConfig.xml"/>
     </bean>
-<!--    mapper接口所在的包的配置-->
+<!--    扫描mapper所在的包-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="org.example.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="factory"/>
+        <property name="basePackage" value="org.example.mapper"/>
     </bean>
-<!--    因为service层中调用dao层的对象，所以dao是service的依赖，所以将dao层依赖注入到service当中-->
+<!--    因为service层中有dao层的对象作为自己的属性调用当中的方法，所以dao是service的依赖，所以将dao层依赖注入到service当中-->
     <bean id="testService" class="org.example.service.testService">
-        <property name="td" ref="testDao"/>
+        <property name="td" ref="testMapper"/>
     </bean>
+<!--    加载外部文件-->
+    <context:property-placeholder location="classpath*:*.properties" system-properties-mode="NEVER"/>
 </beans>

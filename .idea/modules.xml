@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaEETest.iml" filepath="$PROJECT_DIR$/JavaEETest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MyBatis.iml" filepath="$PROJECT_DIR$/MyBatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyBatisForAnnotation/MyBatisForAnnotation.iml" filepath="$PROJECT_DIR$/MyBatisForAnnotation/MyBatisForAnnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisForXML.iml" filepath="$PROJECT_DIR$/MybatisForXML.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/javaEETest_AOPTestForAnnotation.iml" filepath="$PROJECT_DIR$/javaEETest_AOPTestForAnnotation/javaEETest_AOPTestForAnnotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_MavenTest.iml" filepath="$PROJECT_DIR$/javaEETest_MavenTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaEETest_MavenTestChild.iml" filepath="$PROJECT_DIR$/javaEETest_MavenTestChild.iml" />

@@ -29,6 +29,8 @@
         <option value="$PROJECT_DIR$/javaEETest_SpringBootAndSSM/pom.xml" />
         <option value="$PROJECT_DIR$/javaEETest_SpringBootAndSSMOfTrain/pom.xml" />
         <option value="$PROJECT_DIR$/javaEETest_SpringAndMybatisForXML/pom.xml" />
+        <option value="$PROJECT_DIR$/MyBatisForAnnotation/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisForXML/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

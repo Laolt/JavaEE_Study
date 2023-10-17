@@ -1,15 +1,15 @@
 package org.example.service;
 
-import org.example.dao.testDao;
+import org.example.mapper.testMapper;
 
 public class testService {
-    testDao td;
+    testMapper tm;
 
-    public void setTd(testDao td) {
-        this.td = td;
+    public void setTd(testMapper td) {
+        this.tm = td;
     }
 
     public void selectAll(){
-        System.out.println(td.selectAll());
+        System.out.println(tm.selectAll());
     }
 }
