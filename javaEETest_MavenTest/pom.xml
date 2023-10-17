@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>javaEETest_MavenTest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+<!--    聚合-->
+    <packaging>pom</packaging>
+    <modules>
+        <module>javaEETest_MavenTestChild</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>javaEETest_MavenTestChild</artifactId>
+            <version>1.0-SNAPSHOT</version>
+<!--            可选依赖，false为不可选依赖，为了对外部项目隐藏自己的依赖项-->
+            <optional>false</optional>
+            <exclusions>
+<!--                排除依赖,从子依赖中丢弃掉自己的工程中不需要的依赖-->
+<!--                个人理解。可选依赖：我从我祖先那继承的东西不想给我儿子继承；排除依赖：我儿子不想继承我的某些东西(包括我从祖先那继承来的)-->
+                <exclusion>
+                    <groupId>com.fasterxml.jackson</groupId>
+                    <artifactId>jackson-base</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+<!--    配置多环境-->
+        <profiles>
+            <profile>
+                <id>2</id>
+                <properties>
+                    <jdbc.url>...</jdbc.url>
+                </properties>
+<!--                设定是否为默认启动的环境-->
+                <activation>
+                    <activeByDefault>true</activeByDefault>
+                </activation>
+            </profile>
+        </profiles>
+</project>
