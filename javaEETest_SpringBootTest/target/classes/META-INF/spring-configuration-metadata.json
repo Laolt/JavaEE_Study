@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "enterprise",
+      "type": "com.example.domain.properties",
+      "sourceType": "com.example.domain.properties"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

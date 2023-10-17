@@ -1,0 +1,28 @@
+enterprise:
+  name:
+    -你好
+    -好
+spring:
+  profiles:
+    active: 1
+---
+#用三根横线分割不同的环境并用spring.config.activate.on-profile
+#  或者spring.profiles属性命名标记，在最上面用spring.profiles.active指定当前的环境配置
+#多环境开发与maven冲突时首先采用maven对应的环境
+spring:
+  config:
+    activate:
+      on-profile: 1
+
+server:
+  port: 82
+---
+spring:
+  profiles: 2
+server:
+  port: 83
+---
+spring:
+  profiles:3
+server:
+  port: 84
