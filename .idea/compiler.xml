@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="javaEETest_AOPTestForAnnotation" />
         <module name="javaEETest_SpringMvcRequestAndResponce" />
+        <module name="javaEETest_SpringAndMybatisForXML" />
         <module name="javaEETest_SpringAndMybatisForAnnotation" />
         <module name="javaEETest_SpringBootAndSSMOfTrain" />
         <module name="AOPTestForAnnotation" />
@@ -26,6 +27,7 @@
       <module name="javaEETest_MavenTest" target="1.8" />
       <module name="javaEETest_MavenTestChild" target="1.8" />
       <module name="javaEETest_SpringAndMybatisForAnnotation" target="17" />
+      <module name="javaEETest_SpringAndMybatisForXML" target="1.8" />
       <module name="javaEETest_SpringBootAndMyBatis" target="17" />
       <module name="javaEETest_SpringBootAndSSMOfTrain" target="17" />
       <module name="javaEETest_SpringBootTest" target="17" />
