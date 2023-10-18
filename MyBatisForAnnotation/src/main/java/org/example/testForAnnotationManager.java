@@ -22,6 +22,7 @@ public class testForAnnotationManager {
                 +t.getName()+"年龄为："
                 +t.getAge()+"职业是："
                 +t.getJob().getJobName());
+        nihao
     }
     public static void main(String[] args) throws IOException {
         new testForAnnotationManager().selectOneOnOneById(2);
