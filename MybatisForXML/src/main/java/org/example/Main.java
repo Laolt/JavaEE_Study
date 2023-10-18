@@ -12,6 +12,7 @@ public class Main {
        System.out.println(session.selectList("selectAll"));
 //        testMapper testMapper=session.getMapper(org.example.mapper.testMapper.class);
 //        System.out.println(testMapper.selectAll());
+        这是一个测试
     }
 
 }
