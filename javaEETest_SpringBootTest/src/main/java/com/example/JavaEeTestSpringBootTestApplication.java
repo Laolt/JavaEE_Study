@@ -24,16 +24,16 @@ import org.springframework.core.env.Environment;
 @SpringBootApplication
 public class JavaEeTestSpringBootTestApplication {
     //用注解读取对应配置文件的数据
-    @Value("${server.port}")
-    private Integer port;
-    @Value("${enterprise.name[0]")
-    private String a;
-//    可以用来加载所有的环境信息,可任意通过这个对象调用getProperty方法获取配置信息里面的内容
-    @Autowired
-    private Environment e;
-//    把配置信息加载到类中自动装配
-    @Autowired
-    private properties b;
+//    @Value("${server.port}")
+//    private Integer port;
+//    @Value("${enterprise.name[0]")
+//    private String a;
+////    可以用来加载所有的环境信息,可任意通过这个对象调用getProperty方法获取配置信息里面的内容
+//    @Autowired
+//    private Environment e;
+////    把配置信息加载到类中自动装配
+//    @Autowired
+//    private properties b;
 
     public static void main(String[] args) {
         SpringApplication.run(JavaEeTestSpringBootTestApplication.class, args);

@@ -9,7 +9,10 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         SqlSession session= MyBatisUtil.getSqlSession();
-        testMapper testMapper=session.getMapper(testMapper.class);
-        System.out.println(testMapper.selectAll());
+       System.out.println(session.selectList("selectAll"));
+//        testMapper testMapper=session.getMapper(org.example.mapper.testMapper.class);
+//        System.out.println(testMapper.selectAll());
+        System.out.println("测试");
     }
+
 }
